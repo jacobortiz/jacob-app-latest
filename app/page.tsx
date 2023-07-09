@@ -86,7 +86,7 @@ export default function Page() {
   return (
     <section>
       <h1 className='font-bold text-2xl mb-8 tracking-tighter'>
-        hi, im jacob, CURRENTLY WORKING
+        jacob ortiz-rodriguez
       </h1>
 
       <p className="prose prose-neutral dark:prose-invert">
@@ -94,43 +94,53 @@ export default function Page() {
         Graduated from CSU, Montery Bay.
         technical skills from ranging from C++/Java/Python
         as well as skills in JS, React, and cloud deployment
+        I believe my 
+        curiosity, enthusiasm, and abilities will allow me to make a positive 
+        contribution to any work that I will do.
       </p>
 
-
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit vel fugiat iure quidem, iusto quis aliquam itaque qui harum dolorem cum obcaecati culpa at expedita quia eligendi voluptas aut possimus?
-        </p>
+        <h1 className='font-bold text-2xl mb-8 tracking-tighter'>
+          relevant experience
+        </h1>
       </div>
 
-      {/* <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
-        <ChannelLink
-          image={avatar}
-          name="@jakey"
-          subscribers={leerobSubscribers.toLocaleString()}
-          link="https://www.youtube.com/@jakey"
-        />
-      </div> */}
-
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum id veritatis eius ad dolore dignissimos dolorum, iusto ab, doloremque ipsam itaque vitae? Nam, reprehenderit sed eum provident quibusdam delectus nesciunt.
+          proficient in object orient design, data strucutres and algorithms (C/C++, Java, Python)
         </p>
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae incidunt magni, ducimus dignissimos corporis fugiat possimus ex repellat cum veritatis! Adipisci cumque non ipsum beatae eligendi, necessitatibus quas vitae tenetur?
+          Android/iOS . Experience with building and developing mobile apps for both platforms
         </p>
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, quia molestiae exercitationem quisquam doloribus, eum voluptates nulla non aspernatur, obcaecati unde nobis labore distinctio! Dolores rerum blanditiis obcaecati doloremque in!
+          ML/AI. Experience developing and creating jupyter notebooks, exploring data science skills and machine learning methods
+        </p>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          prob insert some pictures
         </p>
       </div>
 
       <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
+      <li>
+          <a
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/jacobortiz99/"
+          >
+            <ArrowIcon />
+            <p className="h-7 ml-2">linkedin</p>
+          </a>
+        </li>
         <li>
           <a
             className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
