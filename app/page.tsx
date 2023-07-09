@@ -82,11 +82,11 @@ function ArrowIcon() {
 // }
 
 
-export default function Home() {
+export default function Page() {
   return (
     <section>
       <h1 className='font-bold text-2xl mb-8 tracking-tighter'>
-        hi, im jacob
+        hi, im jacob, CURRENTLY WORKING
       </h1>
 
       <p className="prose prose-neutral dark:prose-invert">
