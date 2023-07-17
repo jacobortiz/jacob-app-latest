@@ -22,7 +22,10 @@ const graphik = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Jacob Ortiz-Rodriguez',
+  title: {
+    default: 'Jacob Ortiz-Rodriguez',
+    template: '%s | Jacob'
+  },
   description: 'personal website',
   robots: {
     index: true,

@@ -1,4 +1,9 @@
+import { Metadata } from "next"
 
+export const metadata: Metadata = {
+    title: 'Projects',
+    description: 'some projects I have done',
+};
 
 export default function Page() {
     return (

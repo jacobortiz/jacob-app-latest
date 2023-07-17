@@ -2,6 +2,8 @@ import Image from 'next/image'
 
 import { Suspense } from 'react'
 
+import tahoe from '@/public/tahoe.jpeg'
+
 function ArrowIcon() {
   return (
     <svg
@@ -85,9 +87,20 @@ function ArrowIcon() {
 export default function Page() {
   return (
     <section>
-      <h1 className='font-bold text-2xl mb-8 tracking-tighter'>
+      {/* <h1 className='font-bold text-2xl mb-8 tracking-tighter'>
         jacob ortiz-rodriguez
-      </h1>
+      </h1> */}
+
+      <div className="relative h-40 sm:h-80 sm:mb-4">
+          <Image
+            alt="tahoe pick"
+            src={tahoe}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover object-top sm:object-center"
+          />
+        </div>
 
       <p className="prose prose-neutral dark:prose-invert">
         I am student at San Jose State, current pursuing MSCS.
@@ -161,6 +174,17 @@ export default function Page() {
           >
             <ArrowIcon />
             <p className="h-7 ml-2">instagram</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.youtube.com/@jakey_gaming"
+          >
+            <ArrowIcon />
+            <p className="h-7 ml-2">youtube</p>
           </a>
         </li>
       </ul>
