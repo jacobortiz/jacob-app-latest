@@ -1,15 +1,72 @@
-import { Metadata } from "next"
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Projects',
-    description: 'some projects I have done',
+  title: "Projects",
+  description: "some projects I have done",
 };
 
+function ArrowIcon() {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+        fill="currentColor"
+      />
+    </svg>
+  );
+}
+
 export default function Page() {
-    return (
-        <div>
-            here will be projects page
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non accusantium earum eligendi, ipsum ea quasi culpa autem. Quibusdam explicabo excepturi delectus at soluta facere odit repudiandae animi quam officia voluptate enim itaque, perferendis praesentium quis sequi, qui exercitationem nam commodi consequuntur autem in beatae aspernatur! Saepe accusantium perspiciatis nulla dignissimos ab adipisci magni rem voluptatem sit aperiam, blanditiis molestias itaque nesciunt sapiente et dolor aut delectus voluptatum quibusdam? Ullam iste eveniet consequatur sunt facilis laudantium atque soluta esse fugiat reprehenderit fuga dolorum iure, asperiores saepe. Esse vitae sapiente dolorum fugiat recusandae? Molestias tenetur modi voluptatum cupiditate quam, quidem est ipsam blanditiis at repudiandae voluptas nobis provident ipsa doloribus aliquam officia perspiciatis fugit dolor. Placeat, dolores quibusdam. Amet laboriosam nihil repellat et reiciendis? Odio aliquam atque corporis illo, asperiores nulla maiores eos accusamus, molestiae perspiciatis assumenda error nam corrupti beatae dolores, magni eveniet pariatur laudantium laboriosam magnam? Eum quas, blanditiis atque dicta placeat aut, sequi enim modi in autem ducimus ipsum praesentium magni. Dolore, molestiae explicabo itaque repudiandae quae, neque quo numquam vero cum consequuntur, dolorum illum adipisci quas quos dignissimos voluptatum soluta? Laudantium perferendis laboriosam ea facilis modi quia veniam quos, quam officia 
-        </div>
-    )
+  return (
+    <section>
+      <h1 className="font-bold text-2xl mb-8 tracking-tighter">
+        relevant experience
+      </h1>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          OOP. proficient in object orient design, data structures and algorithms
+          (C/C++, Java, Python)
+        </p>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          Android/iOS . Experience with building and developing mobile apps for
+          both platforms
+        </p>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          ML/AI. Experience developing and creating jupyter notebooks, exploring
+          data science skills and machine learning methods
+        </p>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert sm:mt-10">
+        <p>explore all</p>
+      </div>
+
+      <ul className="flex flex-col md:flex-row mt-8 space-x-0 md:space-x-4 space-y-2 md:space-y-0 font-sm text-neutral-600 dark:text-neutral-300">
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/jacobortiz"
+          >
+            <ArrowIcon />
+            <p className="h-7 ml-2">github</p>
+          </a>
+        </li>
+      </ul>
+    </section>
+  );
 }

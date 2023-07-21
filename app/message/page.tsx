@@ -5,7 +5,7 @@ import { SignIn, SignOut } from "./button";
 import Form from './form'
 
 export const metadata: Metadata = {
-    title: 'Message',
+    title: 'WORK IN PROGRESS...',
     description: 'login to leave a message (:.',
 };
 
@@ -20,7 +20,7 @@ export default function Page() {
     return (
         <section>
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-                Leave a message!
+                leave a message
             </h1>
             {/* after getting session to work uncomment */}
             {/* {session?.user ? (

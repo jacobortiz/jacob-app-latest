@@ -68,8 +68,13 @@ export default function Page() {
 
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          MSCS student @ San Jose State. <br />
-          Graduated from CSU, Montery Bay.
+          MSCS student @ San Jose State University <br />
+          Graduated from CSU, Montery Bay, BS in CS <br />
+        </p>
+      </div>
+
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
           technical skills from ranging from C++/Java/Python
           as well as skills in JS, React, and cloud deployment
           I believe my 
@@ -84,31 +89,7 @@ export default function Page() {
         </p>
       </div>
 
-      <div className="prose prose-neutral dark:prose-invert">
-        <h1 className='font-bold text-2xl mb-8 tracking-tighter'>
-          relevant experience
-        </h1>
-      </div>
-
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          proficient in object orient design, data strucutres and algorithms (C/C++, Java, Python)
-        </p>
-      </div>
-
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          Android/iOS . Experience with building and developing mobile apps for both platforms
-        </p>
-      </div>
-
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          ML/AI. Experience developing and creating jupyter notebooks, exploring data science skills and machine learning methods
-        </p>
-      </div>
-
-      <div className="prose prose-neutral dark:prose-invert sm:mt-1">
+      <div className="prose prose-neutral dark:prose-invert sm:mt-10">
         <p>
           follow me on
         </p>
