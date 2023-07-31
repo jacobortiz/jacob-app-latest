@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 
+// minor change
+
 export const metadata: Metadata = {
   title: "Projects",
   description: "some projects I have done",
