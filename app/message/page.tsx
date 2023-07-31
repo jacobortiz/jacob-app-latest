@@ -3,6 +3,8 @@ import { Metadata } from "next"
 import { SignIn, SignOut } from "./button";
 
 import Form from './form'
+import { getServerSession } from "next-auth";
+import { authConfig } from "@/lib/auth";
 
 export const metadata: Metadata = {
     title: 'WORK IN PROGRESS...',
@@ -12,17 +14,18 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const runtime = 'edge';
 
-export default function Page() {
+export default async function Page() {
 
-    let entries;
-    let session;
+    // let entries;
+    const session = await getServerSession(authConfig)
 
     return (
         <section>
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">
                 leave a message
             </h1>
-            {/* after getting session to work uncomment */}
+
+
             {/* {session?.user ? (
             <>
                 <Form />
@@ -32,7 +35,7 @@ export default function Page() {
                 <SignIn />
             )} */}
 
-            <SignIn />
+            {/* <SignIn /> */}
 
             {/* {entries.map((entry) => (
                 <div key={entry.id} className="flex flex-col space-y-1 mb-4">
