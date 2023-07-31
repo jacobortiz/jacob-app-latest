@@ -6,6 +6,8 @@ import Form from './form'
 import { getServerSession } from "next-auth";
 import { authConfig } from "@/lib/auth";
 
+import { getSession } from "next-auth/client";
+
 export const metadata: Metadata = {
     title: 'WORK IN PROGRESS...',
     description: 'login to leave a message (:.',
@@ -17,13 +19,47 @@ export const runtime = 'edge';
 export default async function Page() {
 
     // let entries;
-    const session = await getServerSession(authConfig)
+    let session;
+
+    try {
+        const [sessionRes] = await Promise.allSettled([ authConfig ]);
+
+        if(sessionRes.status === 'fulfilled') {
+            session = sessionRes.value
+        } else {
+            console.error(sessionRes)
+        }
+    } catch(error) {
+    console.error(error)
+    }
+
+
+    console.log(session?.user)
+
 
     return (
         <section>
             <h1 className="font-bold text-2xl mb-8 tracking-tighter">
                 leave a message
             </h1>
+
+            {/* {session?.user ? (
+                <>
+                    <p>hello</p>
+                </>
+
+            ) : (
+                <p>goodbye</p>
+            )} */}
+
+            <SignIn />
+            
+            <div>
+
+            </div>
+            <SignOut />
+
+            {/* <SignOut /> */}
 
 
             {/* {session?.user ? (

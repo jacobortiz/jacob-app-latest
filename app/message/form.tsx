@@ -35,7 +35,7 @@ export default function Page() {
           // disabled={pending}
           type="submit"
         >
-          Sign
+          leave message
         </button>
       </form>
     );
