@@ -3,6 +3,10 @@ import { Metadata } from "next"
 import { SignIn, SignOut } from "./button";
 
 import Form from './form'
+import { getServerSession } from "next-auth";
+import { authConfig } from "@/lib/auth";
+
+import { getSession } from "next-auth/client";
 
 export const metadata: Metadata = {
     title: 'WORK IN PROGRESS...',
@@ -14,9 +18,8 @@ export const runtime = 'edge';
 
 export default async function Page() {
 
-    let entries;
+    // let entries;
     let session;
-
 
     return (
         <section>
@@ -24,7 +27,6 @@ export default async function Page() {
                 leave a message
             </h1>
             {/* after getting session to work uncomment */}
-
             {/* {session?.user ? (
             <>
                 <Form />
@@ -34,7 +36,7 @@ export default async function Page() {
                 <SignIn />
             )} */}
 
-            <SignIn />
+            {/* <SignIn /> */}
 
             {/* {entries.map((entry) => (
                 <div key={entry.id} className="flex flex-col space-y-1 mb-4">

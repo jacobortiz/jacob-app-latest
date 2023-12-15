@@ -66,6 +66,17 @@ export default function Page() {
             <p className="h-7 ml-2">github</p>
           </a>
         </li>
+        <li>
+          <a
+            className="flex items-center hover:text-neutral-800 dark:hover:text-neutral-100 transition-all"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://leetcode.com/jacobortiz/"
+          >
+            <ArrowIcon />
+            <p className="h-7 ml-2">leetcode</p>
+          </a>
+        </li>
       </ul>
     </section>
   );
