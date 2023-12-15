@@ -12,10 +12,11 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const runtime = 'edge';
 
-export default function Page() {
+export default async function Page() {
 
     let entries;
     let session;
+
 
     return (
         <section>
@@ -23,6 +24,7 @@ export default function Page() {
                 leave a message
             </h1>
             {/* after getting session to work uncomment */}
+
             {/* {session?.user ? (
             <>
                 <Form />

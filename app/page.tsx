@@ -5,6 +5,7 @@ import { Suspense } from 'react'
 import kuma from '@/public/kuma.jpg'
 import tahoe from '@/public/tahoe.jpeg'
 import sjsu from '@/public/sjsu.jpg'
+import temp from '@/public/nerd-emoji-radar.gif'
 
 function ArrowIcon() {
   return (
@@ -53,7 +54,7 @@ export default function Page() {
           />
         </div>
 
-        <div className="relative h-40 sm:h-80 sm:mb-4">
+        <div className="relative h-40 sm:h-80 sm:mb-2">
           <Image
             alt="my dog"
             src={kuma}
@@ -63,7 +64,18 @@ export default function Page() {
             className="rounded-lg object-cover object-top sm:object-center"
           />
         </div>
-
+        
+        {/* remove */}
+        <div className="relative h-40 sm:h-80 sm:mb-2">
+          <Image
+            alt="temp holder"
+            src={temp}
+            fill
+            sizes="(max-width: 768px) 213px, 33vw"
+            priority
+            className="rounded-lg object-cover object-top sm:object-center"
+          />
+        </div>
       </div>
 
       <div className="prose prose-neutral dark:prose-invert">

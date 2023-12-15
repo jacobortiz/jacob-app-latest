@@ -16,7 +16,7 @@ export default function Page() {
         <h3 id="computer-office">Computer Setup</h3>
         <ul>
           <li>Intel Core i9-10850K</li>
-          <li>Noctua NH-D15 chromomax cooler</li>
+          <li>iCUE LINK H170i RGB AIO Liquid CPU Cooler</li>
           <li>NVIDIA GeForce RTX 2080</li>
           <li>MSI MPG Z490 Gaming Carbon </li>
           <li>Corsair - Vengeance Pro 32 GB Memory</li>
